@@ -1,0 +1,46 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+    With diff we only see the difference in the in 2 files which makes it easier to spot the difference.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+    We can compare an older version of the file with the new version or check the changes made to the file
+    In case of error or typo it saves a lot of time and resource and hence I don't have to go through the entire code to spot the issue
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+    Pros:- It provides flexibility on when and how to commit.
+    	   Similar Changes can be grouped 
+    	   One commit per logical change can only be applied during manual commit
+
+   	Cons:- If we forget to push the change it cabash_profile_coursen be lost
+   		   Don't have granular control over changes made
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+    Because a change in one file might be associated to another file and allowing those changed files in single commit helps to navigate the changes easier in the later phase
+
+How can you use the commands git log and git diff to view the history of files?
+
+    Git log can be used to view the commit history for all the operations
+    Git diff can be used to find the changes made in a particular commit operation.
+
+
+How might using version control make you more confident to make changes that could break something?
+
+    Since version control allows to revert to a working copy of the code, we can implment the code and monitor for a bug if any and revert it to the previous commit if deemed necessary
+
+Now that you have your workspace set up, what do you want to try using Git for?
+    Code management 
+
+
+    Set alias for sublime editor path 
+        alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+        OR
+        alias subl="/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"
+
+    Set sublime as default editor forgit:-  git config --global core.editor "subl -n -w"
+    Set what happens when we push:- git config --global push.default upstream
+    set what happens when there is a conflict:- git config --global merge.conflictstyle diff3 
+
+    
